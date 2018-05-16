@@ -5,8 +5,8 @@ author:
 - John Doe
 date:
 - Januar 1, 1970
-theme:
-- Copenhagen
+institute:
+- Technical University of Munich
 ---
 
 # First Slide

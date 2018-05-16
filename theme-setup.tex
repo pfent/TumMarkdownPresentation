@@ -1,4 +1,18 @@
+\usepackage[absolute,overlay]{textpos}
 \usepackage{packages/beamercolorthemetum}
 \usepackage{packages/tumcommon/tumlogo}
-\titlegraphic{\vfill\hfill\TUMLogo{1cm}}
+\titlegraphic{%
+\begin{textblock*}{3cm} (9.8cm,.5cm) % {block width} (coords)
+\TUMLogo{1cm}
+\end{textblock*}
+}
+\setbeamertemplate{frametitle}{%
+    \nointerlineskip%
+    \begin{beamercolorbox}[sep=0.3cm,ht=1.8em,wd=\paperwidth]{frametitle}
+        \insertframetitle%
+        \hfill
+        \vspace*{-0.3em}%
+        \TUMLogo[white]{1.2em}
+    \end{beamercolorbox}
+}
 
